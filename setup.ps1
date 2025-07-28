@@ -142,3 +142,12 @@ try {
 catch {
     Write-Error "Failed to install zoxide. Error: $_"
 }
+
+
+# Microsoft.PowerShell Install
+try {
+    winget install -e --accept-source-agreements --accept-package-agreements Microsoft.PowerShell
+}
+catch {
+    Write-Error "Failed to install Powershell. Error: $_"
+}
