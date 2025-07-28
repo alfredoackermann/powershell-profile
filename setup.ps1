@@ -110,7 +110,7 @@ catch {
 }
 
 # Font Install
-Install-NerdFonts -FontName "CascadiaCode" -FontDisplayName "CaskaydiaCove NF"
+Install-NerdFonts -FontName "CascadiaCode" -FontDisplayName "Cascadia Code"
 
 # Final check and message to the user
 if ((Test-Path -Path $PROFILE) -and (winget list --name "OhMyPosh" -e) -and ($fontFamilies -contains "CaskaydiaCove NF")) {
